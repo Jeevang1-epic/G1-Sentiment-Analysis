@@ -17,8 +17,8 @@ The raw data underwent rigorous cleaning to remove null values and noise. Mandat
 * **Sentiment Distribution:** Visualized the frequency of classes to ensure the model wasn't biased toward the majority "Neutral" class.
 * **Text Length Analysis:** Evaluated the impact of tweet length on model precision.
 
-![Sentiment Distribution](sentiment_distribution.png)
-![Tweet Length Histogram](tweet_length_histogram.png)
+![Sentiment Distribution](G1-Sentiment-Analysis-Visuals/sentiment_distribution.png)
+![Tweet Length Histogram](G1-Sentiment-Analysis-Visuals/tweet_length_histogram.png)
 
 ### 2. The Embedding Layer (Architectural Pivot)
 Initially, the project utilized the Gemini `text-embedding-004` API. However, due to external API endpoint instability (404 errors), the pipeline was refactored to use a local **Sentence Transformer** (`all-mpnet-base-v2`).
@@ -29,7 +29,7 @@ Initially, the project utilized the Gemini `text-embedding-004` API. However, du
 ### 3. Dimensionality Reduction (UMAP)
 To validate the mathematical integrity of our vectors, **UMAP** (Uniform Manifold Approximation and Projection) was used to compress the 768 dimensions into a 2D plane.
 
-![UMAP Scatter Plot](umap_scatter_plot.png)
+![UMAP Scatter Plot](G1-Sentiment-Analysis-Visuals/umap_scatter_plot.png)
 
 ### 4. Classification via XGBoost
 The final classification was handled by **XGBoost** (Extreme Gradient Boosting). I chose this over simpler models because it excels at finding non-linear patterns within vector data, resulting in superior F1-scores for the Positive and Negative classes.
@@ -45,7 +45,9 @@ The model achieved a balanced accuracy score, with a particularly strong perform
 | **Sample Size** | 5,000 Tweets |
 | **Embedding Model** | MPNet (Local) |
 
-![Classification Report or Confusion Matrix](classification_report.png)
+![Confusion matrix](G1-Sentiment-Analysis-Visuals/confusion_matrix.png)
+
+![Classification Report](G1-Sentiment-Analysis-Visuals/classification_report.png)
 
 ---
 
