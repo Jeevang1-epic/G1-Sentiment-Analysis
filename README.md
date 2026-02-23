@@ -59,7 +59,7 @@ The model achieved a balanced accuracy score, with a particularly strong perform
 ---
 
 ## Future Applications: E.P.I.C.
-This project serves as a foundational step toward my goal of founding **E.P.I.C. (Electric Powered Induced Cars)**. Understanding "Semantic Intent" in human language is the first step toward building AI that can predict pedestrian behavior and driver sentiment in autonomous vehicle systems.
+This project serves as a foundational step toward my goal of founding **E.P.I.C.**. Understanding "Semantic Intent" in human language is the first step toward building AI that can predict pedestrian behavior and driver sentiment in autonomous vehicle systems.
 
 **Author:** Puttala Jeevan Kumar (G1)  
 **Affiliation:** NIAT Masterclass  
